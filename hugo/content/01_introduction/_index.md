@@ -1,5 +1,5 @@
 +++
-title = "Introduction and Goals"
+title = "Introduction to Argo Rollouts"
 chapter = true
 weight = 1
 pre = "<b>1. </b>"

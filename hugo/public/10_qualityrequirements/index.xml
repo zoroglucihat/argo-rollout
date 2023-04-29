@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quality Requirements on adesso docs site</title>
+    <link>http://example.org/10_qualityrequirements/</link>
+    <description>Recent content in Quality Requirements on adesso docs site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/10_qualityrequirements/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Utility Tree</title>
+      <link>http://example.org/10_qualityrequirements/01_utilitytree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/10_qualityrequirements/01_utilitytree/</guid>
+      <description>10.1 Utility Tree The following diagram gives an overview of the relevant quality attributes and their associated scenarios. The quality goals are also included in the figure, and each refers to the scenarios that illustrate them.</description>
+    </item>
+    
+    <item>
+      <title>Quality Scenarios</title>
+      <link>http://example.org/10_qualityrequirements/02_qualityscenarios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/10_qualityrequirements/02_qualityscenarios/</guid>
+      <description>10.2 Quality Scenarios The initial letters of the identifiers (IDs) of the scenarios in the following table each stand for the parent quality attribute (in German), E for efficiency, for instance. These identifiers are also used in the quality tree. The scenarios cannot always be clearly assigned to one characteristic. Therefore, they sometimes appear several times in the quality tree.
+ID Scenario W01 A person with basic knowledge of UML and chess looks for an introduction to the DokChess architecture.</description>
+    </item>
+    
+  </channel>
+</rss>

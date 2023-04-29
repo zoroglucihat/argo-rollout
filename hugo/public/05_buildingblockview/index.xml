@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Building Block View on adesso docs site</title>
+    <link>http://example.org/05_buildingblockview/</link>
+    <description>Recent content in Building Block View on adesso docs site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/05_buildingblockview/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Level 1</title>
+      <link>http://example.org/05_buildingblockview/01_level1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/05_buildingblockview/01_level1/</guid>
+      <description>5.1	Building Block View, Level 1 DokChess breaks down in four subsystems as presented below. The dashed arrows represent logical dependencies between the subsystems (&amp;ldquo;x -&amp;gt; y&amp;rdquo; for &amp;ldquo;x depends on y&amp;rdquo;). The squared boxes on the membrane of the system are interaction points (&amp;ldquo;ports&amp;rdquo;) with the outside world (→ 3.2 Deployment Context).
+Fig.: DokChess, building block view, level 1
+Subsystem Short description Text UI Realizes communication with a client using the XBoard protocol.</description>
+    </item>
+    
+    <item>
+      <title>Text UI</title>
+      <link>http://example.org/05_buildingblockview/02_textui/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/05_buildingblockview/02_textui/</guid>
+      <description>5.2 Subsystem Text UI (Blackbox) Intent/Responsibility This subsystem implements the communication with a client (for example, a graphical user interface) using the text-based XBoard protocol (→ Decision V.9.1). It reads commands from standard input, checks them against the rules of the game and converts them for the Engine. Responses from the Engine (especially the moves) will be accepted by the subsystem as events, formatted according to the protocol and returned via standard output.</description>
+    </item>
+    
+    <item>
+      <title>Rules</title>
+      <link>http://example.org/05_buildingblockview/03_rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/05_buildingblockview/03_rules/</guid>
+      <description>5.3	Subsystem Rules (Blackbox) Intent/Responsibility This subsystem accounts for the rules of chess according to the International Chess Federation (FIDE). It determines all valid moves for a position and decides whether it is a check, a checkmate or a stalemate.
+Interfaces The subsystem provides its functionality via the Java interface
+org.dokchess.rules.ChessRules.
+Default implementation of the interface is class
+org.dokchess.rules.DefaultChessRules.
+Fig.: Interface ChessRules
+Method Short description getStartingPosition Returns the starting position of the game.</description>
+    </item>
+    
+    <item>
+      <title>Engine</title>
+      <link>http://example.org/05_buildingblockview/04_engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/05_buildingblockview/04_engine/</guid>
+      <description>5.4 Engine (Blackbox) Intent/Responsibility This subsystem contains the determination of a next move starting from a game position. The position is given from outside. The engine itself is stateful and always plays one game at the same time. The default implementation needs an implementation of the game rules to work. An opening library, however, is optional.
+Interfaces The Engine subsystem provides its functionality via the Java interface
+org.dokchess.engine.Engine.
+Default implementation is the class</description>
+    </item>
+    
+    <item>
+      <title>Opening</title>
+      <link>http://example.org/05_buildingblockview/05_opening/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/05_buildingblockview/05_opening/</guid>
+      <description>5.5 Subsystem Opening (Blackbox) Intent/Responsibility This subsystem provides opening libraries and implements the Polyglot opening book format. This format is currently the only one available, which is not proprietary. Corresponding book files and associated tools are freely available on the Internet.
+Interfaces The Opening subsystem provides its functionality via the Java interface
+org.dokchess.opening.OpeningLibrary.
+The class org.dokchess.opening.polyglot.PolyglotOpeningBook provides one possible implementation.
+Fig.: Schnittstelle Eroeffnungsbibliothek, Implementierung PolyglotOpeningBook
+Method Short description lookUpMove Returns a standard move for the specified position from the library, or null.</description>
+    </item>
+    
+    <item>
+      <title>Level 2: Engine</title>
+      <link>http://example.org/05_buildingblockview/06_level_2_engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/05_buildingblockview/06_level_2_engine/</guid>
+      <description>5.6 Level 2: Engine (Whitebox) The engine breaks down in modules Search and (position) Evaluation as shown in the following diagram. If available, the determination of the move is initially delegated to an opening book. Only if the book does not provide a standard move Search is used.
+Fig.: Engine, building block view, level 2
+Module Short description Search Determines the optimal move for a position under certain conditions. Evaluation Evaluates a position from an opponent&amp;rsquo;s perspective.</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>http://example.org/05_buildingblockview/07_search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/05_buildingblockview/07_search/</guid>
+      <description>5.7 Search (Blackbox) Intent/Responsibility The module determines the optimal move for a position under certain conditions. In the game of chess an optimal move always exists, theoretically. The high number of possible moves and the resulting incredible mass of game situations to consider makes it impossible to determine it in practice. Common algorithms like the Minimax therefore explore the &amp;ldquo;game tree&amp;rdquo; only up to a certain depth.
+Interfaces The module provides its functionality via the Java interface</description>
+    </item>
+    
+    <item>
+      <title>Evaluation</title>
+      <link>http://example.org/05_buildingblockview/08_evaluation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/05_buildingblockview/08_evaluation/</guid>
+      <description>5.8 Evaluation (Blackbox) Intent/Responsibility The module evaluates a position from an opponent&amp;rsquo;s perspective. Result is a number where 0 is a balanced situation. A positive number describes an advantage for the player, a negative one a drawback. The higher the number, the greater the advantage or disadvantage. The module makes it therefore possible to compare positions with each other.
+Interfaces The Evaluation module provides its functionality via the Java interface</description>
+    </item>
+    
+  </channel>
+</rss>
