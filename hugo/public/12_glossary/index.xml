@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Glossary on adesso docs site</title>
+    <link>http://example.org/12_glossary/</link>
+    <description>Recent content in Glossary on adesso docs site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/12_glossary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>http://example.org/12_glossary/01_introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/12_glossary/01_introduction/</guid>
+      <description>&amp;ldquo;The game of chess is played between two opponents who move their pieces on a square board called a ‘chessboard’.&amp;rdquo;
+From the FIDE Laws of Chess
+The following glossary contains English chess terms and terms from the world of computer chess. Some of them go beyond the vocabulary of infrequent or casual chess players.
+See FIDE Laws of Chess or the Wikipedia glossary of chess for more information.
+Names of the Chess Pieces Chessboard Geometry &amp;ldquo;The chessboard is composed of an 8 x 8 grid of 64 equal squares alternately light (the ‘white’ squares) and dark (the ‘black’ squares).</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>http://example.org/12_glossary/02_terms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/12_glossary/02_terms/</guid>
+      <description>Term Definition 50 move rule A rule in chess, which states that a player can claim a draw after 50 moves whilst in the meantime no pawn has been moved and no piece has been taken. Alpha-beta pruning Significant improvement of the Minimax algorithm, in which parts of the search tree can be &amp;ldquo;cut off&amp;rdquo; without coming to a different resulting move. Castling A special move in chess where both the players&amp;rsquo;s king and one the rooks are moved.</description>
+    </item>
+    
+  </channel>
+</rss>

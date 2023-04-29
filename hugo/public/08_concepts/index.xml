@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Concepts on adesso docs site</title>
+    <link>http://example.org/08_concepts/</link>
+    <description>Recent content in Concepts on adesso docs site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/08_concepts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dependencies</title>
+      <link>http://example.org/08_concepts/01_dependencies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/08_concepts/01_dependencies/</guid>
+      <description>8.1 Dependencies Between Modules DokChess invites developers to experiment and to extend the engine (→ 1.1 Requirements Overview). In order to do so, the modules are loosely coupled. DokChess modules are implementations of Java interfaces. Java classes that require parts signal this with appropriate methods set«Module»(«Interface» &amp;hellip;). They don&amp;rsquo;t take care of resolving a dependency, for instance, by using a factory. Instead, the client resolves the dependencies by creating suitable implementations with new and putting them together with setter methods (also known as Dependency Injection, short DI).</description>
+    </item>
+    
+    <item>
+      <title>Domain Model</title>
+      <link>http://example.org/08_concepts/02_domainmodel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/08_concepts/02_domainmodel/</guid>
+      <description>8.2 Chess Domain Model &amp;ldquo;The game of chess is played between two opponents who move their pieces on a square board called a ‘chessboard’.&amp;rdquo;&amp;quot;
+from the FIDE Laws of Chess
+The different modules of DokChess exchange chess-specific data. This includes the game situation on the chessboard (position) for instance, as well as opponent&amp;rsquo;s and own moves. All interfaces use the same domain objects as call and return parameters.
+This section contains a brief overview of these data structures and their relationships.</description>
+    </item>
+    
+    <item>
+      <title>User Interface</title>
+      <link>http://example.org/08_concepts/03_userinterface/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/08_concepts/03_userinterface/</guid>
+      <description>8.3	User Interface DokChess itself has no graphical user interface. It interacts via the XBoard protocol with the outside world (→ Decision 9.1 &amp;ldquo;How does the engine communicate with the outside world?&amp;rdquo;).
+The XBoard protocol is text-based. If you have mastered the main commands (see Figure &amp;hellip;) starting DokChess in a command line (Unix shell, Windows command prompt, &amp;hellip;) enables you to interact with the engine. The table below shows a sample dialog, all commands are terminated with a new line).</description>
+    </item>
+    
+    <item>
+      <title>Validation</title>
+      <link>http://example.org/08_concepts/04_validation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/08_concepts/04_validation/</guid>
+      <description>8.4 Plausibility Checks and Validation In simple terms, DokChess is an algorithm. It responds to moves of the opponent with its own moves. Two channels are relevant for input validation:
+the XBoard protocol for interactive user input from the opponent opening libraries in the form of files Input that comes through the XBoard protocol is parsed from the corresponding subsystem. In case of unknown or unimplemented commands DokChess reports the XBoard command &amp;ldquo;Error&amp;rdquo; back to the client.</description>
+    </item>
+    
+    <item>
+      <title>Error Handling</title>
+      <link>http://example.org/08_concepts/05_errorhandling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/08_concepts/05_errorhandling/</guid>
+      <description>8.5 Exception and Error Handling DokChess has no own user interface. Therefore it must indicate problems to the outside world.
+All DokChess subsystem methods throw Runtime Exceptions. In addition in case of the Engine subsystem error messages (onError) may occur during an asynchronous search. Your own extensions (for example a custom search) must be implemented accordingly. Checked exceptions (e.g. java.io.IOException) need to be wrapped in Runtime Exceptions.
+The javadoc of methods and constructors in question shows the rare cases where exceptions are expected in DokChess.</description>
+    </item>
+    
+    <item>
+      <title>Logging</title>
+      <link>http://example.org/08_concepts/06_logging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/08_concepts/06_logging/</guid>
+      <description>8.6 Logging and Tracing For improvements and extensions the analysis capabilities provided by DokChess are of note, particularly in case of on error.
+The DokChess functionality itself can be checked easily with unit tests. This is particularly true for the correct implementation of the game rules and for the game play of the engine (→ 8.7 Testability). It holds true for your own extensions in this area as well.
+Therefore there is no fine-grained logging output within DokChess.</description>
+    </item>
+    
+    <item>
+      <title>Testability</title>
+      <link>http://example.org/08_concepts/07_testability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/08_concepts/07_testability/</guid>
+      <description>8.7 Testability Nothing is more embarrassing for an engine than an illegal move.
+The functionality of the individual modules of DokChess is ensured by extensive unit tests. You find a folder src/test next to src/main, where the Java source code of the modules is stored. It mirrors the package structure, and in the corresponding packages unit tests for the classes realized with JUnit 4.
+Standard unit testing, which examine the individual classes, are named as the class itself with suffix Test.</description>
+    </item>
+    
+  </channel>
+</rss>
