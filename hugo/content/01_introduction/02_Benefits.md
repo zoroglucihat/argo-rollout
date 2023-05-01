@@ -2,19 +2,18 @@
 title = "Introduction to Argo Rollouts"
 menuTitle = "1.2 Benefits"
 weight = 16
-url = "/02_Benefits"
+url = "/01_introduction/02_Benefits"
 +++
 
 ## 1.2 Benefits
 
-TReduced risk during deployments, better control over traffic routing, easier rollback, and integration with monitoring and analysis tools.
 
-<!-- |Quality Goal     |Motivation/description                                                  |
-|-------------------------------------------------|----------------------------|
-| a | b |
-| a | b |
-| a | b |
-| a | b |
-|  |  |
+* <b>Advanced Deployment Strategies</b> ->  Supports Blue-Green and Canary deployments
+* <b>Reduced Risk</b> -> Minimizes the risk of downtime and performance issues during deployments.
+* <b>Instant Rollback</b> -> Facilitates quick rollback to the previous version in case of issues with the new release.
+* <b>Gradual Rollout</b> -> Enables controlled and incremental exposure of new application versions
+* <b>Kubernetes-native</b> -> Integrates with monitoring and analysis tools like Prometheus, Grafana, and Datadog 
+* <b>CI/CD Integration</b> -> Offers various options for customizing deployment strategies
+* <b>Kubernetes-native</b> -> Integrates with existing Kubernetes environments and leverages native Kubernetes resources.
+* <b>CI/CD Integration</b> -> Can be integrated into existing CI/CD pipelines
 
-The [quality scenarios in section 10](/10_qualityrequirements/) detail these goals and serve to evaluate their achievement. -->
