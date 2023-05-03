@@ -9,8 +9,7 @@ url = "02_settinguptheenvironment"
 
 ### Section 2
 
-# Constraints
+# Setting up the Environment
+Setting up the environment for Argo Rollouts contains Argo Rollouts Controller and Argo CLI. In this chapter we will give you installation step for your local environment or Kubernetes cluster.
 
-At the beginning of the project various constraints had to be respected within the design of XXXXX.
-They still affect the solution.
-This section represents these restrictions and explains -- where necessary -- their motivations.
+

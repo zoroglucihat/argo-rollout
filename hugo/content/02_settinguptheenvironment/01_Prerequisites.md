@@ -5,15 +5,13 @@ weight = 1
 url = "01_Prerequisites"
 +++
 
-## 2.1 Technical Constraints
+## 2.1 Prerequisities
 
 {{% notice note %}}
-Teknik kısıtlamalar
-{{% /notice %}}
+Before install the argo-rollouts it should be installed these third party tools on local machine and/or cluster{{% /notice %}}
 
-|  Constraint | Background and / or motivation |
+|  Link | Tool |
 |-------------------------------|--------------------------------|
-| Moderate hardware equipment   | Operating XXX on a standard notebook in order to show the software in the context of workshops and conferences on such a device.                       |
-| Operating on Windows desktop operating systems | Standard equipment for notebooks of oose employees at the time of outlining the solution. High distribution of these operating systems at potentially interested parties (audience at conference talks, participants in trainings). Support for other operating systems (most notably Linux and Mac OS X) is desirable, but not mandatory. |
-| Implementation in Java | Usage as an example in Java-centered trainings and Java conferences. Development with Java SE version 6 (DokChess 1.0), later Java SE 7. The engine should also run in  newer Java versions, when available. |
-| Third-party software freely available | If third-party software is involved (for example, a graphical front end), this should ideally be freely available and free of charge. This way the threshold to use it is kept low.           |
+| [kubeadm or lokal kubernetes installation](https://www.armosec.io/blog/setting-up-kubernetes-cluster/) | Kubernetes 1.16 later                       |
+| [kubectl](https://kubernetes.io/docs/reference/kubectl/) | kubectl installation |
+         |
