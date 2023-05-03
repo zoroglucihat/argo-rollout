@@ -1,0 +1,37 @@
+
+
+Canary Deployment:
+Canary Deployment is a deployment strategy that allows a small percentage of users or administration to try the new version before, instead of offering the entire file a new app or app update instantly. This approach aims to minimize potential interruptions by detecting bugs and detecting whether the new version is performing as expected.
+
+Canary deployment steps are as follows.  A certain percentage of new versions are run.
+The traffic that will come to the new application is presented to a certain percentage of users.
+The performance and errors in the new version of the application are checked.
+If acceptance criteria are met, all traffic is submitted to the new application. If problems are encountered as a result of these tests, the tests are repeated and the problems are fixed.
+
+Where is Canary deployment used?
+It can be used to observe the performance and errors of the new application.
+It can be used in structural changes, in case of adding a new feature, in situations that pose a high risk in practice.
+
+It can be used to make the user experience better.
+
+It can be used to detect increased traffic and high traffic or to detect scaling problems.
+
+
+Avantaj ve Dezavantajları:
+
+
+Canary Deployment'ın avantajları ve dezavantajları şöyledir:
+Avantajları:
+1.	Riskleri azaltır: Canary Deployment, yeni bir uygulamanın veya güncelleme işleminin tüm kullanıcılara anında sunulmasını önleyerek, beklenmedik hataların veya sorunların tüm kullanıcıları etkilemesini önler.
+2.	Sorunları tespit eder: Küçük bir alt küme üzerinde test etmek, yeni sürümün performansını ve uyumluluğunu ölçerek olası sorunları daha erken tespit etmeyi sağlar.
+3.	Kullanıcı deneyimini iyileştirir: Yeni özellikleri veya arayüzü test etmek için küçük bir alt küme üzerinde kullanıcılara erken erişim sağlamak, kullanıcı deneyimini iyileştirir.
+4.	Ölçeklendirme sorunlarını önler: Yüksek trafik veya beklenmedik yüklenme durumlarında, yeni altyapıyı küçük bir alt küme üzerinde test etmek, ölçeklendirme sorunlarını tespit etmek ve önlemek için faydalıdır.
+Dezavantajları:
+1.	Ek kaynak gereksinimleri: Canary Deployment, bir alt kümenin oluşturulması ve yönetilmesi için ek kaynaklar gerektirir. Bu, operasyonel maliyetleri artırabilir.
+2.	Ek yönetim gereksinimleri: Yeni bir alt kümenin yönetimi ve kontrolü, bir ekibin zamanını ve kaynaklarını gerektirir.
+3.	Veri bütünlüğü sorunları: Canary Deployment sırasında, eski ve yeni sürümler arasındaki veri tutarlılığı sorunları ortaya çıkabilir.
+4.	Kullanıcı memnuniyetsizliği: Yeni sürüm test edilirken, bir alt kümenin kullanıcıları yeni sürüme erişim sağlayamayabilirler. Bu durumda kullanıcılar, yeni özelliklere erişememekten dolayı memnuniyetsizlik yaşayabilirler.
+5.	Ek zaman ve çaba gereksinimleri: Canary Deployment, ek testlerin yapılması, sorunların çözülmesi ve son kullanıcılara yeni sürümün sunulması için ek zaman ve çaba gerektirir.
+Bu dezavantajlar, Canary Deployment'ın doğru bir şekilde uygulanması, performans ve uyumluluk testlerinin dikkatli bir şekilde yapılması ve kullanıcı deneyiminin dikkate alınması ile en aza indirilebilir.
+
+
