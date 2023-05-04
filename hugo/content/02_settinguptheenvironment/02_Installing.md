@@ -1,22 +1,62 @@
 +++
 title = "Setting up the Environment"
 menuTitle = "2.2 Installing"
-weight = 2
-url = "02_Installing"
+weight = 4
+url = "/02_settingUpTheEnvironment/02_Installing"
 +++
 
-## 2.2 Organizational Constraints
+## 2.1 Installation
 
-{{% notice note %}}
-Organizasyonel kısıtlamalar
+#### Controller Installation
+<pre><link rel="stylesheet" href="/css/style.css"> <code class="shell">
+ kubectl create namespace argo-rollouts
+ 
+ kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
+</code></pre>
+
+
+{{% notice tip %}}
+If you are using another namespace name, please update install.yaml clusterrolebinding's serviceaccount namespace name.
 {{% /notice %}}
 
-|  Constraint | Background and / or motivation |
-|-------------------------------|--------------------------------|
-| Team   | Stefan Zörner, supported by colleagues, friends and interested workshop or training participants                       |
-| Schedule | Start of development in December 2010, first running prototype March 2011 (evening talk at oose in Hamburg), presentable version May 2011 (talk at JAX conference in Mayence, Germany). Completion of Version 1.0: February 2012 (Deadline book manuscript for 1st edition). |
-| Process model | Risk driven development, iterative and incremental. To describe the architecture arc42 is used. An architecture documentation structured according to this template is a key project result. |
-| Development Tools | Design with pen and paper, in addition Enterprise Architect. Work results for architecture documentation collected in Confluence Wiki. Java source code created in Eclipse or IntelliJ. However, the software can be built only with Gradle, i.e. without an IDE.           |
-| Configuration and version management | At the beginning (Version 1.0) Subversion at SourceForge, later Git at GitHub.           |
-| Test tools and test processes | JUnit with annotation style both for correctness and integration testing and for compliance with efficiency targets.           |
-| Release as Open Source | The source code of the solution, or at least parts, made available as open source. License: GNU General Public License version 3.0 (GPLv3). Hosted at [GitHub](https://github.com/DokChess/).          |
+{{% notice tip %}}
+When installing Argo Rollouts on Kubernetes v1.14 or lower, the CRD manifests must be kubectl applied with the --validate=false option. This is caused by use of new CRD fields introduced in v1.15, which are rejected by default in lower API servers.
+{{% /notice %}}
+
+{{% notice tip %}}
+Argo Rollouts CRDs are not included into namespace-install.yaml. and have to be installed separately. The CRD manifests are located in manifests/crds directory. Use the following command to install them:
+<br>kubectl apply -k https://github.com/argoproj/argo-rollouts/manifests/crds\?ref\=stable</br>
+
+{{% /notice %}}
+
+#### Kubectl Plugin Installation
+
+##### Brew
+<pre><code class="shell">
+brew install argoproj/tap/kubectl-argo-rollouts
+</code></pre>
+
+##### Manual
+
+Install Argo Rollouts Kubectl plugin with curl.
+
+<pre><code class="shell">
+curl -LO https://github.com/argoproj/argo-rollouts/releases/latest/download/kubectl-argo-rollouts-darwin-amd64
+</code></pre>
+
+{{% notice tip %}}
+For Linux dist, replace darwin with linux
+{{% /notice %}}
+
+1- Make the kubectl-argo-rollouts binary executable.
+<pre><code class="shell">
+chmod +x ./kubectl-argo-rollouts-darwin-amd64
+</code></pre>
+2- Move the binary into your PATH.
+<pre><code class="shell">
+sudo mv ./kubectl-argo-rollouts-darwin-amd64 /usr/local/bin/kubectl-argo-rollouts
+</code></pre>
+3- Test to ensure the version you installed is up-to-date:
+<pre><code class="shell">
+kubectl argo rollouts version
+</code></pre>

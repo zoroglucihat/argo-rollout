@@ -3,14 +3,11 @@ title = "Setting up the Environment"
 chapter = true
 weight = 2
 pre = "<b>2. </b>"
-description="At the beginning of the project various constraints had to be respected within the design of XXXX. They still affect the solution."
-url = "02_settinguptheenvironment"
+description="In this section, we introduce the process of setting up the environment for Argo Rollouts, which involves having a running Kubernetes cluster and installing the Argo Rollouts controller and required Custom Resource Definitions (CRDs)."
+url = "02_settingUpTheEnvironment"
 +++
 
 ### Section 2
+# Setting up the Environment
 
-# Constraints
-
-At the beginning of the project various constraints had to be respected within the design of XXXXX.
-They still affect the solution.
-This section represents these restrictions and explains -- where necessary -- their motivations.
+In this section, we introduce the process of setting up the environment for Argo Rollouts, which involves having a running Kubernetes cluster and installing the Argo Rollouts controller and required Custom Resource Definitions (CRDs).
