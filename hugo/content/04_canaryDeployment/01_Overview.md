@@ -5,7 +5,7 @@ weight = 1
 url = "01_Overview/04_blueGreenDeployment"
 +++
 
-## 3.1 Overview
+## 4.1 Overview
 -----
 
 Argo Rollouts uses Kubernetes custom resources to implement canary deployment strategy. Argo Rollout source; defines the canary deployment strategy, and metrics in the background.
