@@ -7,7 +7,7 @@ url = "04_context/03_WhereTouse"
 
 
 
-### Use Case:
+### 4.3 Use Case
 * observe the performance and errors of the new application.
 * use in structural changes, in case of adding a new feature, in situations that pose a high risk in practice.
 * make the user experience better

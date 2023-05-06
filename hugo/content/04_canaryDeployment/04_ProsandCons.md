@@ -6,7 +6,7 @@ url = "04_context/04_ProsAndCons"
 +++
 
 
-### Pros and Cons:
+### 4.4 Pros and Cons:
 Here are the advantages and disadvantages of Canary Deployment:
 Advantages:
 * Reduces risks: Canary Deployment prevents any new app or update from being made available to all users instantly, preventing unexpected bugs or issues from affecting all users.
