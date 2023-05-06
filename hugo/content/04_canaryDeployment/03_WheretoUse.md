@@ -1,13 +1,13 @@
 +++
 title = "CANARY DEPLOYMENT"
-menuTitle = "4.3 Pros and Cons of Using Canary Deployment and Where to Use It"
+menuTitle = "4.3  Where to Use "
 weight = 2
-url = "04_context/03_ProsConsWheretoUse"
+url = "04_context/03_WhereTouse"
 +++
 
-## Pros and Cons of Using Canary Deployment and Where to Use It
 
-### Where to Use It:
+
+### Use Case:
 * observe the performance and errors of the new application.
 * use in structural changes, in case of adding a new feature, in situations that pose a high risk in practice.
 * make the user experience better
