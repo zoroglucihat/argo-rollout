@@ -4,7 +4,7 @@ menuTitle = "4.4 ProsAndCons"
 weight = 2
 url = "04_context/04_ProsAndCons"
 +++
-todo
+
 
 ### Pros and Cons:
 Here are the advantages and disadvantages of Canary Deployment:
