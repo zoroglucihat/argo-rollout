@@ -1,5 +1,5 @@
 +++
-title = "Building Block View"
+title = "Demo"
 chapter = true
 weight = 5
 pre = "<b>5. </b>"

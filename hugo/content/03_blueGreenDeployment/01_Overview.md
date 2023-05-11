@@ -2,7 +2,7 @@
 title = "BLUE GREEN DEPLOYMENT"
 menuTitle = "3.1 Overview"
 weight = 1
-url = "01_Overview/03_blueGreenDeployment"
+url = "03_blueGreenDeployment/01_Overview"
 +++
 
 ## 3.1 Overview

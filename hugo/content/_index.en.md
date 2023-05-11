@@ -4,7 +4,7 @@ title: "adesso Turkey"
 
 # <b> DEPLOYMENT STRATEGIES WITH ARGO ROLLOUTS </b>
 
-
+    
 ## Argo Rollouts
 
 A comprehensive workshop designed to equip you with the essential skills and knowledge for effectively implementing Argo Rollouts in your development pipeline.

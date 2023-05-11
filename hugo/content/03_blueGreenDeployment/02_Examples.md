@@ -2,7 +2,7 @@
 title = "BLUE GREEN DEPLOYMENT"
 menuTitle = "3.2 Deployment Examples"
 weight = 2
-url = "03_context/02_deployment"
+url = "03_blueGreenDeployment/02_deployment"
 +++
 
 ## 3.2 Deployment Examples
