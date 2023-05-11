@@ -1,0 +1,31 @@
+pre, pre code {
+    background-color: transparent;
+    border: none ;
+    padding: 0 ;
+    align-items: center;
+    justify-content: center;
+  /* Other styles */
+
+  }
+  
+  code.shell {
+    background-color: #e7f2e3 ;
+    padding: 5px ;
+    color: #000000;
+    line-height: unset;
+  }
+  code.yaml {
+    background-color: #ffffff;
+    padding: 5px;
+    line-height: unset;
+    border-style:inset;
+    border-color: #000000;
+    border-width: 1px;
+  }
+
+  .scrollable {
+    width: 100%; /* or any specific width */
+    height: 300px; /* or any specific height */
+    overflow-y: auto; /* add vertical scrollbar when necessary */
+    overflow-x: hidden; /* prevent horizontal scrollbar */
+  }

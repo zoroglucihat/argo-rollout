@@ -1,0 +1,27 @@
+Let's deploy the every components we need.
+kubectl apply -f argo-rollouts-example/blue-green/
+
+~You can see the current status of this rollout by running below command as well~
+kubectl argo rollouts get rollout rollout-bluegreen
+
+~Now, we deploy the green version of the app~
+
+kubectl argo rollouts set image rollout-bluegreen rollouts-demo=argoproj/rollouts-demo:green
+
+kubectl get pods
+
+~by running the command below, which shows, the new version is in "paused" state~
+
+kubectl argo rollouts get rollout rollout-bluegreen
+
+~promote the green version of our app~
+
+kubectl argo rollouts promote rollout-bluegreen
+
+~how to rollback to first revision which is blue~
+
+~Undo a rollout~
+kubectl argo rollouts undo rollout-bluegreen
+
+~Undo a rollout revision 2~
+kubectl argo rollouts undo rollout-bluegreen --to-revision=2

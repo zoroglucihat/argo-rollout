@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Risks on adesso docs site</title>
+    <link>http://example.org/11_risks/</link>
+    <description>Recent content in Risks on adesso docs site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/11_risks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Frontend Connection</title>
+      <link>http://example.org/11_risks/01_frontend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/11_risks/01_frontend/</guid>
+      <description>11.1 Risk: Connecting to the Frontend fails There is no knowledge about connecting an engine to an existing chess frontend. Available open source engines are programmed in C and are delivered as executable programs (*.exe). Since DokChess is developed in Java, they are of limited use as examples. Nothing is known in the project about chess communication protocols.
+If it is not possible to make a working connection, the solution can not be used with existing frontends.</description>
+    </item>
+    
+    <item>
+      <title>Effort</title>
+      <link>http://example.org/11_risks/02_effort/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/11_risks/02_effort/</guid>
+      <description>11.2 Risk: Implementation effort too high There is no experience with chess programming. Simultaneously, the rules that are to be implemented completely (→ 1.1 Requirements Overview) are extensive and complicated. The different pieces move differently, and there are special rules such as stalemate and promotion. In the case of castling and en passant, the move history, and not only the current situation on the board, is relevant.
+The programming of the algorithms is also non-trivial.</description>
+    </item>
+    
+    <item>
+      <title>Playing Strength</title>
+      <link>http://example.org/11_risks/03_playingstrength/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/11_risks/03_playingstrength/</guid>
+      <description>11.3 Risk: Achieving the playing strength fails The quality goals demand both an acceptable playing strength and a simple, accessible solution. In addition, there are requirements with respect to efficiency. It is uncertain whether the planned Java solution with an object-oriented domain model and simple move selection can achieve these competing goals.
+The risk manifests itself through too bad playing strength, too long waiting times or both. This would be particularly unpleasant for live performances in lectures, as the solution is not perceived as such by the listeners (but as a toy).</description>
+    </item>
+    
+  </channel>
+</rss>
