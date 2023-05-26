@@ -7,7 +7,7 @@ description="This section introduces Argo Rollouts."
 url = "01_introduction"
 +++
 
-### Section 1
+### Introduction to Argo Rollouts
 
 # Introduction
 

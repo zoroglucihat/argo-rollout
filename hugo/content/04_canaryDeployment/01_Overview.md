@@ -2,7 +2,7 @@
 title = "Canary Deployment"
 menuTitle = "4.1 Overview"
 weight = 1
-url = "01_Overview/04_blueGreenDeployment"
+url = "04_canaryDeployment/01_Overview"
 +++
 
 ## 4.1 Overview

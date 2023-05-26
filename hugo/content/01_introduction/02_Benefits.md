@@ -7,12 +7,6 @@ url = "/01_introduction/02_Benefits"
 
 ### 1.2 Benefits
 
-<link rel="stylesheet" href="/css/custom.css">
-<link rel="stylesheet" href="/css/ribbon.css">
-<div id='container'>
-  <aside class='ribbon1'>Advanced Deployment Strategies</aside> : Supports Blue-Green and Canary deployments
-</div>
-
 * <b>Advanced Deployment Strategies</b> ->  Supports Blue-Green and Canary deployments
 * <b>Reduced Risk</b> -> Minimizes the risk of downtime and performance issues during deployments.
 * <b>Instant Rollback</b> -> Facilitates quick rollback to the previous version in case of issues with the new release.

@@ -1,8 +1,8 @@
 +++
 title = "CANARY DEPLOYMENT"
-menuTitle = "4.3  Where to Use "
+menuTitle = "4.3  Use Cases "
 weight = 2
-url = "04_context/03_WhereTouse"
+url = "04_canaryDeployment/03_UseCases"
 +++
 
 
