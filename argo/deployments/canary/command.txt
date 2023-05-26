@@ -1,15 +1,13 @@
+kubectl apply -f canary/
+kubectl get all
+kubectl argo rollouts get rollout rollouts-demo
+kubectl argo rollouts set image rollouts-demo rollouts-demo=argoproj/rollouts-demo:yellow
+kubectl get pods
+kubectl argo rollouts get rollout rollouts-demo
+kubectl argo rollouts promote rollouts-demo
+kubectl get pods
+kubectl delete -f canary/
 
-kubectl create namespace argo-rollouts
-kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
 
-
-
-
-Apply the services: kubectl apply -f canary-rollout-svc.yaml
-Apply the rollout: kubectl apply -f canary-rollout.yaml
-
-Edit the rollout with different nginx image:tag 
-kubectl edit rollout nginx-canary -n argo-rollouts
-
-After that watch the rollout in action.
-kubectl get rollout nginx-canary -n argo-rollouts -w 
+# Dashboard
+kubectl argo rollouts dashboard  
