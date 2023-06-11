@@ -6,12 +6,23 @@ url = "03_blueGreenDeployment/03_blueGreenDeployment"
 +++
 
 ## 3.3 Use Cases
------
 
-<b>Feature Releases and Upgrades</b>: One of the primary use cases of Argo Rollouts with a blue-green strategy is when you are releasing a new version of your application or a significant feature upgrade. You can use the blue-green deployment strategy to switch users to the new version without any downtime. In the event of an issue with the new version, you can quickly switch back to the old version, ensuring continuous service availability.
+<link rel="stylesheet" href="/css/custom.css">
+<link rel="stylesheet" href="/css/text.css">
 
-<b>Bug Fixes and Patch Releases</b>: Sometimes, you might need to release a quick bug fix or a security patch. Using Argo Rollouts, you can spin up the patched version of your application (green environment) alongside the current version (blue environment). Once you have validated the patched version, you can switch the user traffic to the green environment.
+<div id='container'>
+  <aside class='text1'> <span class="text-content">Feature Releases and Upgrades</span></aside><aside class='text2'> Argo Rollouts' blue-green strategy is ideal for introducing new application versions or major upgrades. It enables seamless user transition to new versions and quick reversion in case of issues, ensuring uninterrupted service.</aside2>
+</div>
 
-<b>A/B</b> Testing: While this is typically associated with canary deployments, you can also use a blue-green strategy for specific A/B testing scenarios. For example, if you want to test a major change in your application, you can use Argo Rollouts to deploy the new version to a small segment of users. You can then gather feedback and usage data before deciding whether to roll it out to all users.
+<div id='container'>
+  <aside class='text1'> <span class="text-content">Bug Fixes and Patch Releases</span></aside><aside class='text2'> For immediate bug fixes or security patches, Argo Rollouts lets you validate a patched version of your app in parallel with the current version before transitioning user traffic.</aside2>
+</div>
 
-<b>Infrastructure Changes</b>: If you are planning to make significant changes to your infrastructure (like changing the database schema or migrating to a different type of server), a blue-green deployment can help. You can set up the new infrastructure and deploy your application on it (green environment) while keeping the current infrastructure and application running (blue environment). You can then switch over to the new infrastructure once you are confident that it is stable and performs as expected.
+<div id='container'>
+  <aside class='text1'> <span class="text-content">A/B Testing</span></aside><aside class='text2'> Blue-green strategy can be used for A/B testing major app changes. Argo Rollouts facilitates deployment to a user subset, allowing feedback collection before full rollout.</aside2>
+</div>
+
+
+<div id='container'>
+  <aside class='text1'> <span class="text-content">Infrastructure Changes</span></aside><aside class='text2'> For major infrastructure changes like database schema alterations or server migrations, blue-green deployments offer a safety net. This strategy allows for setting up and testing new infrastructure before transitioning, ensuring stability and performance.</aside2>
+</div>

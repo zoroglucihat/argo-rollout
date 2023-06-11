@@ -5,12 +5,11 @@ weight = 15
 url = "/01_introduction/01_whatIsArgoRollout"
 +++
 
-## 1.1 What is Argo Rollouts
+### 1.1 What is Argo Rollouts
+<link rel="stylesheet" href="/css/custom.css">
+<p id="main-text">Argo Rollouts is a Kubernetes-native application deployment solution that extends the capabilities of Kubernetes by introducing advanced deployment strategies to enable safer and more controlled application releases. It allows users to implement sophisticated deployment patterns like Blue-Green and Canary deployments, providing better management and risk mitigation during the rollout process.</p>
 
-Argo Rollouts is a Kubernetes-native application deployment solution that extends the capabilities of Kubernetes by introducing advanced deployment strategies to enable safer and more controlled application releases. It allows users to implement sophisticated deployment patterns like Blue-Green and Canary deployments, providing better management and risk mitigation during the rollout process.
-
-## Key features of Argo Rollouts include
-
+### Key features of Argo Rollouts include
 * Advanced Deployment Strategies
 * Custom Resource Definitions (CRDs)
 * Integration with Monitoring and Analysis Tools

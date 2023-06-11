@@ -7,8 +7,7 @@ url = "03_blueGreenDeployment/02_deployment"
 
 ## 3.2 Deployment Examples
 
------
-#### Rollout yaml file: 
+#### Rollout yaml file 
 <pre><link rel="stylesheet" href="/css/style.css"> <code class="yaml">
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
@@ -37,7 +36,7 @@ spec:
       autoPromotionEnabled: true
 </code></pre>
 
-#### Service yaml file: 
+#### Service yaml file
 <pre><link rel="stylesheet" href="/css/style.css"> <code class="yaml">
 apiVersion: v1
 kind: Service

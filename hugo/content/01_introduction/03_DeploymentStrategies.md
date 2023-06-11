@@ -6,10 +6,8 @@ description = "Illustrates the stakeholders of DokChess and their respective int
 url = "/01_introduction/03_DeploymentStrategies"
 +++
 
-## 1.3 Deployment Strategies
-
-Blue-Green and Canary deployments, each with its own advantages and suitable use cases.
-
+### 1.3 Deployment Strategies
+<link rel="stylesheet" href="/css/custom.css">
 
 |Blue-Green Deployments|
 |---------------------|
