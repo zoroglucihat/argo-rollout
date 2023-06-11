@@ -5,6 +5,8 @@ weight = 5
 pre = "<b>5. </b>"
 description="This section we will do a demo session. "
 url="05_Demo"
+description="This section we will do a demo session. "
+url="05_Demo"
 +++
 
 
