@@ -39,6 +39,7 @@ spec:
 </code></pre>
 
 #### Service yaml file
+#### Service yaml file
 <pre><link rel="stylesheet" href="/css/style.css"> <code class="yaml">
 apiVersion: v1
 kind: Service
