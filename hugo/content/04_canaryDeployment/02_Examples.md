@@ -2,13 +2,14 @@
 title = "CANARY DEPLOYMENT"
 menuTitle = "4.2 Deployment Examples"
 weight = 2
-url = "04_context/02_deployment"
+url = "04_canaryDeployment/02_Examples"
 +++
 
 ## 4.2 Deployment Examples
 
------
-#### Rollout yaml file: 
+<link rel="stylesheet" href="/css/custom.css">
+
+#### Rollout yaml file
 <pre><link rel="stylesheet" href="/css/style.css"> <code class="yaml">
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
@@ -44,7 +45,7 @@ spec:
       stableService: nginx-stable-svc
 </code></pre>
 
-#### Service yaml file: 
+#### Service yaml file
 <pre><link rel="stylesheet" href="/css/style.css"> <code class="yaml">
 # nginx-services.yaml
 apiVersion: v1
