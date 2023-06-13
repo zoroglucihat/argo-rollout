@@ -1,0 +1,31 @@
+pre, pre code {
+    background-color: transparent;
+    border: none ;
+    padding: 0 ;
+    align-items: center;
+    justify-content: center;
+  /* Other styles */
+
+  }
+  
+  code.shell {
+    background-color: #e5f3ff ;
+    padding: 5px ;
+    color: #000000;
+    position: relative;
+    font-weight: 50px;
+    margin: 10px 0;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.3);
+  }
+  code.yaml {
+    background-color: #ffffff;
+    padding: 5px;
+    line-height: unset;
+    border-style:inset;
+    border-color: #000000;
+    border-width: 1px;
+  }
+
+  code.steps{
+    
+  }

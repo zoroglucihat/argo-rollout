@@ -7,7 +7,13 @@ title: "adesso Turkey"
     
 ## Argo Rollouts
 
-A comprehensive workshop designed to equip you with the essential skills and knowledge for effectively implementing Argo Rollouts in your development pipeline.
+### Overview of GitOps
+GitOps is a type of managing Kubernetes clusters and appplication delivery. It works with tools that work Git as a single source of truth for declarative infrastructure and its applications, enabling the actual operation and usage of the infrastructure to converge to the desired state found in Git. Basically if you want to update a new application, you only update git repository. Automated pipelines are handling with all process.
+### GitOps Principles
+* Infrastructure is prepared as declarative
+* Immutable and Versioned
+* Automatically pulled
+* Use of GitOps Software Agents to ensure accuracy and see differences
 
-In this workshop, we will delve into the world of progressive delivery, exploring how Argo Rollouts enables seamless and controlled deployments while integrating seamlessly with GitOps practices
-
+### What is Argo Rollouts?
+Argo Rollouts is a Kubernetes-native application deployment solution that extends the capabilities of Kubernetes by introducing advanced deployment strategies to enable safer and more controlled application releases. It allows users to implement sophisticated deployment patterns like Blue-Green and Canary deployments, providing better management and risk mitigation during the rollout process.

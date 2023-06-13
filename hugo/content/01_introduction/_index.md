@@ -7,8 +7,7 @@ description="This section introduces Argo Rollouts."
 url = "01_introduction"
 +++
 
-### Section 1
 
-# Introduction
+
 
 In this section, we introduce Argo Rollouts and explore its key features, benefits, and deployment strategies, providing a comprehensive understanding of how it enhances the application release process in Kubernetes environments.

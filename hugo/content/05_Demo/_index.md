@@ -3,16 +3,11 @@ title = "Demo"
 chapter = true
 weight = 5
 pre = "<b>5. </b>"
-description="This section describes the decomposition of DokChess into modules. These are also reflected in the package structure of the Java source code."
-url="05_buildingblockview"
+description="This section we will do a demo session. "
+url="05_Demo"
 +++
 
-### Section 5
 
-# Building Block View
+Let's kick off our demo session with a basic introduction to Argo Rollouts. This powerful tool is designed to help you manage deployments in Kubernetes with advanced strategies like Blue-Green and Canary.
 
-This section describes the decomposition of DokChess into modules. These are also reflected in the package structure of the Java source code.
-In DokChess we call modules of the first decomposition level _subsystems_.
-The [→ Building Block View, Level 1](/en/05_buildingblockview/01_level1/) presents them including their interfaces.
-
-For the subsystem Engine this overview also includes a more detailed breakdown into [→ Level 2](/en/05_buildingblockview/06_level_2_engine/).
+For this demo, we're going to simulate a typical workflow. We'll start by writing and committing code, pushing it to our Git repository, and then watching as Argo Rollouts automatically manages the deployment for us.
