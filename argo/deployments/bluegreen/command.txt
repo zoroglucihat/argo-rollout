@@ -1,0 +1,13 @@
+kubectl apply -f bluegreen/
+kubectl get all
+kubectl argo rollouts get rollout rollout-bluegreen
+kubectl argo rollouts set image rollout-bluegreen rollouts-demo=argoproj/rollouts-demo:green
+kubectl get pods
+kubectl argo rollouts get rollout rollout-bluegreen
+kubectl argo rollouts promote rollout-bluegreen
+kubectl delete -f bluegreen/
+
+
+#Dashboard:
+
+kubectl argo rollouts dashboard  

@@ -3,6 +3,7 @@ title = "CANARY DEPLOYMENT"
 menuTitle = "4.2 Deployment Examples"
 weight = 2
 url = "04_canaryDeployment/02_Examples"
+url = "04_canaryDeployment/02_Examples"
 +++
 
 ## 4.2 Deployment Examples

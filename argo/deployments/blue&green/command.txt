@@ -1,8 +1,0 @@
-Apply the services: kubectl apply -f bluegreen-svc.yaml
-Apply the rollout: kubectl apply -f nginx-bluegreen-rollout.yaml
-
-Edit the rollout with different nginx image:tag 
-kubectl edit rollout nginx-bluegreen -n argo-rollouts
-
-After that watch the rollout in action.
-kubectl get rollout nginx-bluegreen -n argo-rollouts -w 

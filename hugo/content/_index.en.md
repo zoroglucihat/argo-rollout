@@ -5,7 +5,7 @@ title: "adesso Turkey"
 # <b> DEPLOYMENT STRATEGIES WITH ARGO ROLLOUTS </b>
 
     
-## Argo Rollouts
+<link rel="stylesheet" href="/css/custom.css">
 
 ### Overview of GitOps
 GitOps is a type of managing Kubernetes clusters and appplication delivery. It works with tools that work Git as a single source of truth for declarative infrastructure and its applications, enabling the actual operation and usage of the infrastructure to converge to the desired state found in Git. Basically if you want to update a new application, you only update git repository. Automated pipelines are handling with all process.

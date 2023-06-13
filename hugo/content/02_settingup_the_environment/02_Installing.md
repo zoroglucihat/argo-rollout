@@ -7,6 +7,7 @@ url = "/02_settingUpTheEnvironment/02_Installing"
 
 ## 2.1 Installation
 #### Kubectl Plugin Installation
+<link rel="stylesheet" href="/css/custom.css">
 
 #### Brew (MacOS)
 <pre><code class="shell">
