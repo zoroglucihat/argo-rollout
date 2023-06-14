@@ -1,7 +1,7 @@
 +++
 title = "Thank You"
 chapter = true
-weight = 5
+weight = 7
 pre = "<b>6. </b>"
 url="06_Thanks"
 +++
