@@ -10,7 +10,7 @@ url="06_Thanks"
 Thank you all for your participation!
 
 
-<img src="/images/qr-minimized.png" alt="QR" />
+<img src="/images/qr.png" alt="QR" />
 
 
 <iframe src="/linkedin-badge.html" width="650" height="300" style="border:none; overflow-y: hidden;"></iframe>
