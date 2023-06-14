@@ -17,6 +17,8 @@ url = "/02_settingUpTheEnvironment/01_ConfiguringEnv"
 * **Install Argo Rollouts:** Install the Argo Rollouts controller and required Custom Resource Definitions (CRDs) on your Kubernetes cluster by following the official Argo Rollouts installation guide.
 
 
+<p id="main-text">
 {{% notice note %}}
 We will delve into a more detailed discussion on the installation process of Argo Rollouts in the upcoming section.
 {{% /notice %}}
+</p>

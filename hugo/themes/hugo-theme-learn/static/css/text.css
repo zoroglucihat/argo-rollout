@@ -45,6 +45,7 @@ aside.text2 {
   color: rgb(49, 49, 49);
   margin: 10px 0;
   text-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.3);
+  line-height: 30px
 }
 
 .text-content {
