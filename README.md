@@ -3,5 +3,5 @@ Step 1
 https://gohugo.io/installation/
 
 Step 2 
-cd argo/
+cd argo/hugo/
 hugo serve
